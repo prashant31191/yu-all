@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:pew="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvTtile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android version name"
+            android:textColor="@color/primary_text_default_material_light"
+            android:textSize="15dp"
+            android:maxLines="2"
+            android:paddingLeft="5dp"
+
+            android:layout_toRightOf="@+id/ivImage"
+            android:layout_toLeftOf="@+id/ivDownload"
+            android:layout_toStartOf="@+id/ivDownload" />
+
+
+
+        <!--ic_convert-->
+            <ImageView
+                android:src="@drawable/ic_convert"
+                android:layout_width="50dp"
+                android:layout_height="90dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom|right"
+                android:id="@+id/ivDownload" />
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="this is the description"
+            android:maxLines="5"
+            android:paddingLeft="5dp"
+            android:textColor="@color/secondary_text_default_material_light"
+            android:textSize="10dp"
+            android:layout_below="@+id/tvTtile"
+            android:layout_toRightOf="@+id/ivImage"
+            android:layout_toLeftOf="@+id/ivDownload"
+            android:layout_toStartOf="@+id/ivDownload" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:pew="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tvTtile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android version name"
+            android:textColor="@color/primary_text_default_material_light"
+            android:textSize="@dimen/abc_text_size_subhead_material" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+
+            android:layout_weight="1">
+
+
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:src="@drawable/ic_convert"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:padding="9dp"
+                android:layout_marginRight="-23dp"
+                android:layout_marginBottom="-19dp"
+                android:layout_gravity="bottom|right"
+                android:id="@+id/ivDownload" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="this is the description"
+            android:maxLines="5"
+            android:textColor="@color/secondary_text_default_material_light"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>-->

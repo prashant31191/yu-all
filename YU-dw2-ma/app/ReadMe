@@ -1,0 +1,202 @@
+
+
+
+
+
+
+==========================App Documents===================
+
+
+==================================
+Change Package name
+===============================
+
+
+1) set project view instead of andorid
+
+
+
+now
+
+go to app>src>main>java
+
+select "com.utubema"
+
+next right click on this folder
+
+
+
+select "Refector"
+next
+select "Rename"
+
+
+ here will be show warning select "Rename Package"
+ now
+ rename with your new package name like "tubemaster"
+
+ don't forget to check both bellow check boxes for
+ 1)search in comment and string
+ 2)search text for occurences
+ Checked both tick mark
+
+ -------------------
+ now it's some process  and click on "Do Refector" in all files
+ -------------------
+
+
+
+ ========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=============================================
+change version name and version code
+============================================
+
+D:\My apps\Upwork Projects\TubeMt\YU-dw2-ma
+
+select >> (build.gradle) file
+changes here
+
+like
+ versionCode 3
+ versionName "1.2"
+
+
+
+
+ defaultConfig {
+        applicationId "com.utubema" // this is the package name don't change here directly
+        minSdkVersion 15 // minimume sdk version
+        targetSdkVersion 24 //target sdk version code
+        versionCode 2//change here version code
+        versionName "1.1" // change here version name
+    }
+
+
+
+===========================================================
+for the
+change ADS ID as well as folder name and api key for youtube
+
+
+java > com.package name> utils>MyData.java
+or
+press Double time shift key
+
+ directly find here (MyData.java) file and change there
+
+
+
+
+Search file  - (MyData.java)
+
+ // this is the Download data folder name use Application name or as you like
+    public static String folderName = "TubeMa";
+
+    //here put your youtube api key get from google console
+    // for ex.  AIzaSyDGDGk8ctTus1DCsWgldVeq2UaUwO7i4WM   or AIzaSyA-BJLIysijMmJqUAWAJATdpNxZK9JIo0U
+    public static String apiKey = "";
+
+    // replace your banner ID for EX
+    public static String strBennerId = "ca-app-pub-4464444444499999999/111111122222233";
+
+    //replace your Interstitial ID (full screen ads id)  for EX
+    public static String strInterstitialId = "ca-app-pub-4464444444499999999/5555444444444";
+
+
+
+
+
+you can set Ads Id same both side java file as well as xml file
+
+
+res>values>string.xml
+or
+
+press Double time shift key
+
+ directly find here (string.xml) file and change there
+
+
+
+change there
+  <!--replace your banner ID for EX-->
+    <string name="banner_ad_unit_id">ca-app-pub-4464444444499999999/111111122222233</string>
+
+    <!--replace your Interstitial ID (full screen ads id) for EX-->
+    <string name="int_ad_unit_id">ca-app-pub-4464444444499999999/5555444444444</string>
+
+
+
+
+==================================================================
+
+
+1) change app icon
+
+res > drawable >ic_app_icon.png
+image name
+ic_app_icon.png
+
+
+
+2)change app splash screen image
+
+res > drawable >ic_splash_background.jpg
+image name
+ic_splash_background.jpg
+
+============================================================================
+
+
+
+
+
+
+
+==========================================================
+D:\My apps\Upwork Projects\TubeMt\YU-dw2-ma\app\apk_keystore
+
+D:\My apps\Upwork Projects\TubeMt\YU-dw2-ma\app\apk_keystore\tubema.jks
+
+
+
+
+
+D:\My apps\Upwork Projects\TubeMt\YU-dw2-ma\app\apk_keystore
+
+Keystore file name
+itubemat.jks
+
+Password
+itubemat@123
+
+
+itubemat
+
+itubemat@123
+
+
+
+
+Alias
+itubemat
+
+Password
+itubemat@123
+
+==========================================================

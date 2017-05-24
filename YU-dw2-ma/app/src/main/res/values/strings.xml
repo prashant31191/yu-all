@@ -1,0 +1,21 @@
+<resources >
+    <string name="app_name" >Arabtub</string >
+
+    <string name="navigation_drawer_open" >Open navigation drawer</string >
+    <string name="navigation_drawer_close" >Close navigation drawer</string >
+
+    <string name="action_settings" >Settings</string >
+
+    <string name="action_downloads" >Downloads videos</string >
+    <string name="action_rateus" >Give rate</string >
+    <string name="action_shareapp" >Share app</string >
+
+
+    <!--replace your banner ID-->
+    <string name="banner_ad_unit_id">ca-app-pub-5393360390753574/1281731244</string>
+
+
+
+
+
+</resources >

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 Baidu, Inc. All Rights Reserved.
+  -->
+<resources >
+    <color name="colorPrimary" >#cd201f</color >
+    <color name="colorPrimaryDark" >#a11918</color >
+    <color name="colorAccent" >#e50000</color >
+    <color name="clrStatusbar" >#a11918</color >
+
+    <color name="texthint_color">#555555</color>
+    <color name="text_color">#111111</color>
+    <color name="text_color_black">#111111</color>
+    <color name="text_color_white">#ffffff</color>
+
+    <color name="HMprimaryPressed">#e50000</color> <!-- af0606 @color/green_bg  07c5bc-->
+    <color name="HMprimaryFocused">#e50000</color>
+    <color name="HMprimary">#fafafa</color><!-- 00FFFFFF -->
+
+    <color name="clr_txt_title">#FFFFFF</color>
+
+
+    <color name="tabIndicatorColor">#000000</color>
+
+    <color name="clrTabTxtPress">#FFFFFF</color>
+    <color name="clrTabTxtUnpress">#BBFFFFFF</color>
+
+    <color name="clr_list_bg">#e2e2e2</color>
+
+    <color name="clr_menu_press">#bb3300</color>
+    <color name="clr_menu_unpress">#ff3300</color>
+
+
+    <color name="clrTvTxtPress">#AA111111</color>
+    <color name="clrTvTxtUnpress">#111111</color>
+
+    <color name="clrBtnBgUnpress">#0033bb</color>
+    <color name="clrBtnBgPress">#0033FF</color>
+
+    <color name="white">#ffffff</color>
+    <color name="clr_d_title">#ffffff</color>
+
+
+
+
+</resources >

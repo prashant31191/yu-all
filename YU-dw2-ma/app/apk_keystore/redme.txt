@@ -1,0 +1,35 @@
+http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=Query
+
+
+
+
+
+
+D:\My apps\Upwork Projects\TubeMt\YU-dw2-ma\app\apk_keystore
+
+
+
+D:\My apps\Upwork Projects\TubeMt\YU-dw2-ma\app\apk_keystore\itubemat.jks
+
+D:\My apps\Upwork Projects\TubeMt\YU-dw2-ma\app\apk_keystore
+
+
+Keystore file name
+itubemat.jks
+
+Password
+itubemat@123
+
+
+itubemat
+
+itubemat@123
+
+
+
+
+Alias
+itubemat
+
+Password
+itubemat@123

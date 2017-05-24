@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<FrameLayout
+    android:visibility="gone"
+    android:id="@+id/flDownloads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downloads"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/bsm_header_txt_18d"
+        android:id="@+id/tvDownloads"
+        android:layout_gravity="center" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/bannerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom" >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</FrameLayout>
+
+
+    <FrameLayout
+        android:visibility="visible"
+        android:id="@+id/flVideos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/main2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/llSearchVideos"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="50dp">
+            <AutoCompleteTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Search videos here..."
+
+                android:id="@+id/search_et"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/texthint_color"
+                android:textColor="@color/text_color"
+                android:imeOptions="actionSearch"
+                android:cursorVisible="true"
+                android:completionThreshold="1"
+                android:textCursorDrawable="@null"
+                android:layout_toLeftOf="@+id/ivClear"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/search"
+                android:background="@drawable/btn_home_ripple"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/ivClear"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/close"
+                android:background="@drawable/btn_home_ripple"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivSearch"
+                android:layout_toStartOf="@+id/ivSearch" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/llDataVideos"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llSearchVideos">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="top|center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/startAppBanner1"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Video files"
+                    android:textColor="#a111"
+                    android:id="@+id/tvDownloadTag"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+
+                    android:textSize="12dp"
+
+                    android:layout_gravity="center" />
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video Download"
+                android:textColor="@color/tv_txt_color"
+                android:id="@+id/tvVideos"
+                    android:gravity="center"
+                android:padding="8dp"
+                    android:textStyle="bold"
+                android:textSize="@dimen/bsm_header_txt_16d"
+                android:layout_gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3GP Download"
+                    android:textColor="@color/tv_txt_color"
+                    android:id="@+id/tv3gp"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/bsm_header_txt_16d"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Audio files"
+                    android:textColor="#a111"
+                    android:id="@+id/tvDownloadTag2"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+
+                    android:textSize="12dp"
+
+                    android:layout_gravity="center" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MP3 Download"
+                    android:textColor="@color/tv_txt_color"
+                    android:id="@+id/tvMp3"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/bsm_header_txt_16d"
+                    android:layout_gravity="center" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Popular Songs"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/tvPopularSongs"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/bsm_header_txt_18d"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+
+            <com.startapp.android.publish.ads.banner.Banner
+            android:id="@+id/startAppBanner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>
