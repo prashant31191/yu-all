@@ -10,9 +10,9 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main"
-    tools:context="com.arabtub.MainActivity" >
+    tools:context="com.provid15.MainActivity" >
 
-    <com.arabtub.view.YouTuBeWebView
+    <com.provid15.view.YouTuBeWebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

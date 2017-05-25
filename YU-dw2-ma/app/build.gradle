@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.arabtub" // this is the package name don't change here directly
+        applicationId "com.provid15" // this is the package name don't change here directly
         minSdkVersion 15 // minimume sdk version
         targetSdkVersion 24 //target sdk version code
         versionCode 1//change here version code
